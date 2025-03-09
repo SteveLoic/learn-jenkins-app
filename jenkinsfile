@@ -16,6 +16,12 @@ pipeline {
                 sh 'npm ci'
                 sh 'npm run build'
             }
+        },
+        stage('Tests') {
+            steps {
+                sh 'npm run Tests'
+            }
         }
+        
     }
 }
